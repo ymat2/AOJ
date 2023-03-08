@@ -7,4 +7,3 @@ if S.count("R") == K:
 else:
 	print("R")
 
-### python3 is not suitable for this type of question
