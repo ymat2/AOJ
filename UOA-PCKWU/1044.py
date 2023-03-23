@@ -1,4 +1,4 @@
-def change_camel_case(txt, ordr):
+def change_camel_case(lst, ordr):
 	if ordr == "L":
 	elif ordr == "U":
 	elif ordr == "D":
