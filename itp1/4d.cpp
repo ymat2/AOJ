@@ -1,19 +1,20 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <numeric>
+#include <bits/stdc++.h>  //import all the c++ libraries
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    vector<int> l(n);
-    for (int i = 0; i < n; i++) {
-        cin >> l[i];
-    }
-    int min_val = *min_element(l.begin(), l.end());
-    int max_val = *max_element(l.begin(), l.end());
-    long long sum_val = accumulate(l.begin(), l.end(), 0);
-    cout << min_val << " " << max_val << " " << sum_val << endl;
-    return 0;
+	int n, tmin, tmax;
+	long long tsum = 0;
+	cin >> n;
+	tmin = INT_MAX;
+	tmax = INT_MIN;
+	for (int i=0;i<n;i++) {
+		int t;
+		cin >> t;
+		tsum += t;
+
+		tmax = max(t, tmax);
+		tmin = min(t, tmin);
+
+	}
+	cout << tmin << " " << tmax << " " << tsum << endl;
 }
