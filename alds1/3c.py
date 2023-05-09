@@ -13,8 +13,8 @@ def cmd(_input_, lst):
 			except ValueError:
 				pass
 
-lst = []
 n = int(input())
+lst = []
 for i in range(n):
 	cmd(input(), lst)
 print(" ".join(list(map(str, lst))))
